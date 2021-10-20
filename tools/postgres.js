@@ -5,8 +5,10 @@ const pool = new Pool({
     user: 'beds10',
     password: '12345678',
     database: 'students',
-    port: '19038'
-
+    port: '19038',
+    ssl: {
+        rejectUnauthorized:false
+    }
 });
 
 module.exports = pool;
